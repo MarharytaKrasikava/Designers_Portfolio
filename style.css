@@ -1,0 +1,524 @@
+﻿body {
+	margin: 0 auto;
+	height: 1732px;
+}
+
+@font-face {
+	font-family: "MavenPro-Regular";
+	src: url("./assets/Fonts/MavenPro-Regular.ttf");
+}
+
+@font-face {
+	font-family: "MavenPro-Bold";
+	src: url("./assets/Fonts/MavenPro-Bold.ttf");
+}
+
+@font-face {
+	font-family: "Lato-Regular";
+	src: url("./assets/Fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Lato-Black";
+	src: url("./assets/Fonts/Lato-Black.ttf");
+}
+
+.nav {
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+.nav ul {
+	background-color: rgb(50,50,50);
+	list-style: none;
+	text-align: center;
+	padding: 0px;
+	padding-top: 10px;
+	margin: 0px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav li {
+	font-size: 10px;
+	font-family: "Lato-Regular", Helvetica, sans-serif;
+	display: inline-block;
+	color: #FFF;
+	width: 100px;
+}
+
+.nav li a {
+	text-decoration: none;
+	color: white;
+}
+
+.nav li a:hover {
+	color: rgb(46, 179, 152);
+	cursor: pointer;
+}
+
+.blog::after {
+	content: '•';
+	margin-left: 35px;
+}
+.abt::before {
+	content: '•';
+	margin-right: 35px;
+}
+
+.triangle {
+	margin: 0px auto;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 26px 45px 0 45px;
+	border-color: rgb(50,50,50) transparent transparent transparent;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+
+.portfolio {
+	height: 721px;
+	background-color: #ffffff;
+	display: flex;
+  justify-content: center;
+	align-items: center;
+}
+
+.hexagon-container {
+  height: 721px;
+	width: 1020px;
+	padding: 0;
+	position: relative;
+}
+
+  .row-1 {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  position: relative;
+	  height: 216px;
+	  width: 818px;
+	  padding: 82px 100px 0 100px;
+	  margin: 0;
+  }
+  .row-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 46px;
+    height: 216px;
+    width: 1020px;
+}
+.row-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 92px;
+    height: 216px;
+    width: 820px;
+    padding: 0 100px 0px 100px;
+    margin: 0;
+}
+.line-top {
+	position: absolute;
+	top: 11px;	
+	left: 30px;
+	width: 960px;
+	height: 1px;
+}
+  .line-top-1 {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 410px;
+	  background-color: #e4e9eb;
+	  height: 100%;
+	  overflow: auto;
+  }
+  
+  .line-top-2 {
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  width: 410px;
+	  background-color: #e4e9eb;
+	  height: 100%;
+	  overflow: auto;
+  }
+  .line-left-row {
+	  position: relative;
+	  left: -10px;
+	  width: 1px;
+	  height: 104px;
+	  background-color: #e4e9eb;
+  }
+  .line-right-row {
+	  position: relative;
+	  left: 10px;
+	  width: 1px;
+	  height: 104px;
+	  background-color: #e4e9eb;
+  }
+  .line-bottom {
+	  position: absolute;
+	  bottom: 11px;
+	  left: 30px;
+	  width: 960px;
+	  height: 1px;
+	  background-color: #e4e9eb;
+  }
+  
+  .portfolio-browser {
+	  position: absolute;
+	  left: 30px;
+	  bottom: 23px;
+	  height: 6px;
+	  width: 51px;
+  }
+  .portfolio-browser ul {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  display: flex;
+	  list-style-type: none;
+	  justify-content: center;
+	  padding: 0;
+	  margin: 0;
+  }
+  .portfolio-browser li {
+	  display: inline-block; 
+  }
+  li .square {    
+	  height: 6px;
+	  width: 6px;
+	  background-color: #ddd2c5;
+	  margin: 0 1.3px;
+  }
+  .portfolio-browser li .square.active{
+	  background-color: #8b8784;
+	}
+
+.picture {
+	margin: 10px;
+	width: 180px;
+	height: 209px;
+}
+.hexagon {
+    transform: rotate(120deg); /*поворачиваем весь элемент */
+    overflow: hidden;
+    visibility: hidden;
+    display: inline-block;
+	transition: transform 1s ease-in;/*поворачивает при загрузке страницы */	
+}
+
+.hex-layer-1 {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+    overflow: hidden;
+}
+
+.hex-layer-2 {
+    width: 100%;
+    height: 100%;
+    background: #cccc;
+    transform: rotate(-60deg);
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;    
+	visibility: visible;	
+}
+.Layer33 {
+	background-image: url('./assets/Images/Layer 33.png');
+	
+}
+
+.Layer31 {
+	background-image: url('./assets/Images/Layer 31.png');
+	position: relative;
+	right: 2px;
+}
+
+.Layer34 {
+    background-image: url('./assets/Images/Layer 34.png');
+}
+.Layer35 {
+	background-image: url('./assets/Images/Layer 35.png');
+	background-position: center bottom;	
+}
+
+.L35 {
+	width: 180px;
+	height: 206px;
+	margin: 10px;
+}
+.Layer36 {
+    background-image: url('./assets/Images/Layer 36.png');
+}
+.Layer44 {
+	background-image: url('./assets/Images/Layer 44.png');
+	background-position: center bottom;
+}
+.Layer37 {
+	background-image: url('./assets/Images/Layer 37.png');
+	
+}
+.Layer38 {
+    background-image: url('./assets/Images/Layer 38.png');
+}
+.Layer39 {
+    background-image: url('./assets/Images/Layer 39.png');
+}
+.Layer40 {
+    background-image: url('./assets/Images/Layer 40.png');
+}
+.Layer41 {
+    background-image: url('./assets/Images/Layer 41.png');
+}
+.Layer43 {
+    background-image: url('./assets/Images/Layer 43.png');
+}
+.Layer42 {
+	background-image: url('./assets/Images/Layer 42.png');
+	background-position: 21%;	
+}
+.portfolio .hexagon:hover {
+    transform: rotate(-120deg);
+    transition: transform 1s ease-in;
+}
+
+.about {
+	height: 316px;	
+	background-color: rgb(46, 179, 152);
+	padding: 13px 60px 12px 60px;
+	margin: auto;
+}
+
+.image {
+	margin: 0px;
+	width: 180px;
+	height: 224px;
+	float: left;
+	margin-right: 22px;
+	position: relative;
+	bottom: 3px;
+}
+
+.about-image {
+	position: relative;
+	bottom: 3px;
+	background-image: url('./assets/Images/Image.png');
+	background-position: 49%;
+}
+
+.about .description {
+	height: 216px;
+	width: 783px;
+	margin: auto;
+	padding: 50px 20px 50px 18px;
+	border-right: 1px solid #219D84;
+	border-left: 1px solid #219D84;
+	font-family: "Lato-Regular", Helvetica, sans-serif;	
+	color: rgba(215, 252, 245);
+	text-align: justify;
+	font-size: 12px;
+	line-height: 1.85;
+	word-spacing: -0.09em;
+}
+.description h1 {
+	display: block;
+	font-family: "MavenPro-Regular", Arial, sans-serif;
+	font-size: 30px;
+	font-weight: normal;
+	margin: 0;
+	height: 26px;
+	line-height: 30px;
+}
+
+.description h4 {
+	display: block;
+	font-family: "MavenPro-Regular", Arial, sans-serif;
+	font-size: 18px;
+	color: rgb(32, 129, 109);
+	text-align: justify;
+	font-weight: normal;
+	margin: 0;
+	height: 26px;
+	line-height: 32px;
+}
+
+.description p {
+	margin: 12px 0;
+}
+
+.social-media {
+	height: 24px;
+	padding-top: 24px;
+	text-align: right;
+}
+.social-media img {
+	display: inline;
+}
+.get-in-touch {
+	height: 540px;
+	background-color: rgb(50, 50, 50);
+	padding: 13px 30px 11px 30px;
+	margin: 0;
+}
+
+.lines {
+	margin: auto;
+	background-color: rgb(50, 50, 50);
+	padding: 10px 20px;
+	border-top: 1px solid rgb(34, 34, 34);
+	border-bottom: 1px solid rgb(34, 34, 34);
+	border-left: 0px;
+	border-right: 0px;
+	height: 518px;
+	width: 880px;
+	font-family: "MavenPro-Regular", Arial, sans-serif;
+	color: rgb(215, 252, 245);
+}
+
+.form {
+	width: 580px;
+	padding-left: 49px;
+	padding-right: 30px;
+	background-color: rgb(50, 50, 50);	
+	display: inline-block;
+	font-family: "Lato-Regular", Helvetica, sans-serif;
+}
+.form-header {
+	margin-left: 49px;
+}
+.form-body {
+	display: flex;
+	padding-top: 18px;
+}
+.lines h3 {
+	font-size: 30px;
+	font-weight: normal;
+	margin-top: 17px;
+	margin-bottom: 0px;
+}
+
+.lines p {
+	margin: -1px 0px 18px 1px;
+	font-size: 18px;
+	font-weight: normal;
+}
+input:invalid {
+    border: 2px sold red;
+}	
+
+.form .name {
+	margin-bottom: 8px;
+	padding-left: 14px;
+	height: 38px;
+	width: 567px;
+	background-color: #454545;
+	border: 0px;
+}
+
+::placeholder {
+	color: rgba(190, 190, 190, 1);
+	font-family: "Lato-Regular", Helvetica, sans-serif;
+	font-size: 13px;
+	letter-spacing: -0.06em;	
+}
+
+.form .email {
+	padding-left: 15px;
+	margin: 8px 0px;
+	height: 36px;
+	width: 567px;
+	background-color: #454545;
+	border: 0px;
+	font-size: 12px;
+	letter-spacing: -0.06em;
+}
+.form .subject {
+	padding-left: 14px;
+	margin: 9px 0px;
+	height: 36px;
+	width: 567px;
+	background-color: #454545;
+	border: 0px;
+	font-size: 12px;
+	letter-spacing: -0.06em;
+}
+.form .message {
+	padding: 11px 0 0 14px;
+	margin: 7px 0px 9px 0;
+	height: 139px;
+	width: 567px;
+	background-color: #454545;
+	border: 0px;
+	resize: none;
+	color: rgb(190, 190, 190);
+	font-size: 12px;
+	letter-spacing: -0.03em;
+}
+.form .submit {
+	background-color: rgb(46, 179, 152);
+	border: 0px;
+	height: 37px;
+	width: 90px;
+	color: rgb(215, 252, 245);
+	float: right;
+	margin: 2px 0;
+	font-size: 11px;
+}
+
+.text {
+	display: inline-block;
+	width: 180px;
+	font-size: 12px; 
+}
+
+.contacts {
+	margin-top: 31px;
+}
+
+.location {
+	margin: 0 14px 0 3px;
+}
+
+.phone {
+	margin: 0 11px 0 1px;
+	
+}
+
+.mail {
+	margin: 0 12px 0 -1px;
+}
+
+
+.text p {
+	color: rgba(224, 224, 224);
+	text-align: justify;
+	font-size: 12px;
+	line-height: 1.85;
+}
+
+.Copyright {
+	height: 43px;
+	background-color: rgb(34, 34, 34);	
+}
+.Copyright div {
+	height: 21px;
+	width: 980px;	
+	padding: 11px 20px;
+	margin: auto;
+}
+.Copyright div p {
+	color: rgb(50, 50, 50);
+	font-family: "MavenPro-Regular", Arial, sans-serif;
+	font-size: 14px;
+	color: rgb(69, 69, 69);
+	margin: 0px;
+}
